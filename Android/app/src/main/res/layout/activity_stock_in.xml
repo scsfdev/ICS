@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StockInActivity">
+
+    <TextView
+        android:id="@+id/tvLocID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/location_id"
+        android:textColor="@color/colorMidnightBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSILoc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="text"
+        android:maxLength="10"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLocID"
+        app:layout_constraintStart_toEndOf="@+id/tvLocID"
+        app:layout_constraintTop_toTopOf="@+id/tvLocID" />
+
+    <TextView
+        android:id="@+id/tvPNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/part_no"
+        android:textColor="@color/colorMidnightBlue"
+        app:layout_constraintEnd_toEndOf="@+id/tvLocID"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocID" />
+
+    <EditText
+        android:id="@+id/etSIPNo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="text"
+        android:maxLength="10"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPNo"
+        app:layout_constraintStart_toEndOf="@+id/tvPNo"
+        app:layout_constraintTop_toTopOf="@+id/tvPNo" />
+
+
+    <TextView
+        android:id="@+id/tvQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/qty"
+        android:textColor="@color/colorMidnightBlue"
+        app:layout_constraintEnd_toEndOf="@+id/tvPNo"
+        app:layout_constraintTop_toBottomOf="@+id/tvPNo" />
+
+    <EditText
+        android:id="@+id/etSIQty"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:maxLength="5"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvQty"
+        app:layout_constraintStart_toEndOf="@+id/tvQty"
+        app:layout_constraintTop_toTopOf="@+id/tvQty" />
+
+
+    <ListView
+        android:id="@+id/lstView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:isScrollContainer="false"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/etSIQty" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnSIClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clearForm"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/btnSISave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="saveForm"
+            android:text="@string/save" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

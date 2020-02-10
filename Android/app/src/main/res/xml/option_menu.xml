@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="mode"
+        android:summary="On = Web API, Off = Data file"
+        android:title="Online Mode" />
+
+    <EditTextPreference
+        android:key="api_url"
+        android:summary="Web URL for the API"
+        android:title="API URL" />
+
+
+</PreferenceScreen>

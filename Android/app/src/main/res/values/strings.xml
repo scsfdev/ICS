@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MY INVENTORY CONTROL</string>
+    <string name="stock_in">STOCK IN</string>
+    <string name="stock_out">STOCK OUT</string>
+    <string name="incoming">INCOMING SHIPMENT</string>
+    <string name="outgoing">OUTGOING SHIPMENT</string>
+    <string name="date">DATE:</string>
+    <string name="shipmentNo">SHIPMENT NO:</string>
+    <string name="customerCode">CUSTOMER NO:</string>
+    <string name="supplierCode">SUPPLIER NO:</string>
+    <string name="do_no">DO NO:</string>
+    <string name="part_no">PART NO:</string>
+    <string name="qty">QTY:</string>
+    <string name="save">SAVE</string>
+    <string name="clear">CLEAR</string>
+    <string name="order_no">ORDER NO:</string>
+    <string name="location_id">LOCATION ID:</string>
+    <string name="staff_id">STAFF ID:</string>
+    <string name="api_url">API URL</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="ver_dev">Ver: 0.0.3 by Tin Maung Htay</string>
+    <string name="mode">Mode: -</string>
+</resources>

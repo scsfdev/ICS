@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Data_Viewer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WEB_API" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost/aics/WcfSvcICS.svc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

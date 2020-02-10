@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnIncoming"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_bg"
+        android:drawableTop="@drawable/incoming"
+        android:paddingTop="10dp"
+        android:text="INCOMING"
+        app:layout_constraintBottom_toTopOf="@+id/btnStockOut"
+        app:layout_constraintEnd_toStartOf="@+id/btnStockIn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStockIn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_bg"
+        android:drawableTop="@drawable/stockin"
+        android:paddingTop="10dp"
+        android:text="STOCK IN"
+        app:layout_constraintBottom_toBottomOf="@+id/btnIncoming"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnIncoming"
+        app:layout_constraintTop_toTopOf="@+id/btnIncoming"
+         />
+
+    <Button
+        android:id="@+id/btnStockOut"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/btn_bg"
+        android:drawableTop="@drawable/stockout"
+        android:text="STOCK OUT"
+        app:layout_constraintBottom_toTopOf="@+id/txtView"
+        app:layout_constraintEnd_toStartOf="@+id/btnOutgoing"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIncoming" />
+
+    <Button
+        android:id="@+id/btnOutgoing"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/btn_bg"
+        android:drawableTop="@drawable/outgoing"
+        android:text="OUTGOING"
+        app:layout_constraintBottom_toBottomOf="@+id/btnStockOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnStockOut"
+        app:layout_constraintTop_toTopOf="@+id/btnStockOut" />
+
+    <TextView
+        android:id="@+id/txtMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/mode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txtView"/>
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="10sp"
+        android:layout_marginRight="10dp"
+        android:text="@string/ver_dev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtMode" />
+</android.support.constraint.ConstraintLayout>

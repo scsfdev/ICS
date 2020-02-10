@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OutgoingActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:columnCount="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="end"
+            android:text="@string/date"
+            android:textColor="@color/colorMidnightBlue" />
+
+        <TextView
+            android:id="@+id/tvOutDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="5dp"
+            android:text="2018/08/07" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="end"
+            android:text="@string/order_no"
+            android:textColor="@color/colorMidnightBlue" />
+
+        <EditText
+            android:id="@+id/etOutOrderNo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="5dp"
+            android:maxLength="10"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+
+            android:gravity="end"
+            android:text="@string/customerCode"
+            android:textColor="@color/colorMidnightBlue" />
+
+        <EditText
+            android:id="@+id/etCustCode"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="5dp"
+            android:maxLength="10"
+            android:inputType="text"
+            android:maxLines="1" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="end"
+            android:text="@string/part_no"
+            android:textColor="@color/colorMidnightBlue" />
+
+        <EditText
+            android:id="@+id/etOutPNO"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="5dp"
+            android:maxLength="10"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="end"
+            android:text="@string/qty"
+            android:textColor="@color/colorMidnightBlue" />
+
+        <EditText
+            android:id="@+id/etOutQty"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="5dp"
+            android:inputType="number"
+            android:maxLength="5"
+            android:maxLines="1" />
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/lstView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:isScrollContainer="false"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnOutClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clearForm"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/btnOutSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="saveForm"
+            android:text="@string/save" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

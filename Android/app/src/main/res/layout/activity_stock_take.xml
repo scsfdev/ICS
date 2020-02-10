@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvStaffID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/staff_id"
+        android:textColor="@color/colorMidnightBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSTStaffId"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="text"
+        android:maxLength="10"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStaffID"
+        app:layout_constraintStart_toEndOf="@+id/tvStaffID"
+        app:layout_constraintTop_toTopOf="@+id/tvStaffID" />
+
+    <TextView
+        android:id="@+id/tvLocID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/location_id"
+        android:textColor="@color/colorMidnightBlue"
+        app:layout_constraintEnd_toEndOf="@+id/tvStaffID"
+        app:layout_constraintTop_toBottomOf="@+id/tvStaffID" />
+
+    <EditText
+        android:id="@+id/etSTLoc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="text"
+        android:maxLength="10"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLocID"
+        app:layout_constraintStart_toEndOf="@+id/tvLocID"
+        app:layout_constraintTop_toTopOf="@+id/tvLocID" />
+
+    <TextView
+        android:id="@+id/tvPNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/part_no"
+        android:textColor="@color/colorMidnightBlue"
+        app:layout_constraintEnd_toEndOf="@+id/tvLocID"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocID" />
+
+    <EditText
+        android:id="@+id/etSTPNo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="text"
+        android:maxLength="10"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPNo"
+        app:layout_constraintStart_toEndOf="@+id/tvPNo"
+        app:layout_constraintTop_toTopOf="@+id/tvPNo" />
+
+
+    <TextView
+        android:id="@+id/tvQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/qty"
+        android:textColor="@color/colorMidnightBlue"
+        app:layout_constraintEnd_toEndOf="@+id/tvPNo"
+        app:layout_constraintTop_toBottomOf="@+id/tvPNo" />
+
+    <EditText
+        android:id="@+id/etSTQty"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvQty"
+        app:layout_constraintStart_toEndOf="@+id/tvQty"
+        app:layout_constraintTop_toTopOf="@+id/tvQty" />
+
+
+    <ListView
+        android:id="@+id/lstSTView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/etSTQty"
+        app:layout_constraintTop_toBottomOf="@+id/etSTQty" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnSIClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clearForm"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/btnSISave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="saveForm"
+            android:text="@string/save" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://localhost/aics/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/aics/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://localhost/aics/Imports">
+      <xsd:import schemaLocation="http://localhost/AICS/WcfSvcICS.svc?xsd=xsd0" namespace="http://localhost/aics/" />
+      <xsd:import schemaLocation="http://localhost/AICS/WcfSvcICS.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/AICS/WcfSvcICS.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/wcfsvc_android" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWcfSvcICS_GetProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProducts" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_CheckConn_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckConn" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_CheckConn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckConnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetDbInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDbInfo" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetDbInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDbInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProduct" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetProductByLoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductByLoc" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetProductByLoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductByLocResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetShipmentByInput_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShipmentByInput" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetShipmentByInput_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShipmentByInputResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetAllStock_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllStock" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetAllStock_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllStockResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetAllShipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllShipment" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetAllShipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllShipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetQtyByLocPart_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQtyByLocPart" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_GetQtyByLocPart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQtyByLocPartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_StockIO_InputMessage">
+    <wsdl:part name="parameters" element="tns:StockIO" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_StockIO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StockIOResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_ShipmentIO_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShipmentIO" />
+  </wsdl:message>
+  <wsdl:message name="IWcfSvcICS_ShipmentIO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShipmentIOResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWcfSvcICS">
+    <wsdl:operation name="GetProducts">
+      <wsdl:input wsaw:Action="http://localhost/aics/IWcfSvcICS/GetProducts" message="tns:IWcfSvcICS_GetProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://localhost/aics/IWcfSvcICS/GetProductsResponse" message="tns:IWcfSvcICS_GetProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckConn">
+      <wsdl:input wsaw:Action="http://localhost/aics/IWcfSvcICS/CheckConn" message="tns:IWcfSvcICS_CheckConn_InputMessage" />
+      <wsdl:output wsaw:Action="http://localhost/aics/IWcfSvcICS/CheckConnResponse" message="tns:IWcfSvcICS_CheckConn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDbInfo">
+      <wsdl:input wsaw:Action="http://localhost/aics/IWcfSvcICS/GetDbInfo" message="tns:IWcfSvcICS_GetDbInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://localhost/aics/IWcfSvcICS/GetDbInfoResponse" message="tns:IWcfSvcICS_GetDbInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <wsdl:input wsaw:Action="http://localhost/aics/IWcfSvcICS/GetProduct" message="tns:IWcfSvcICS_GetProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://localhost/aics/IWcfSvcICS/GetProductResponse" message="tns:IWcfSvcICS_GetProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductByLoc">
+      <wsdl:input wsaw:Action="http://localhost/aics/IWcfSvcICS/GetProductByLoc" message="tns:IWcfSvcICS_GetProductByLoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://localhost/aics/IWcfSvcICS/GetProductByLocResponse" message="tns:IWcfSvcICS_GetProductByLoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShipmentByInput">
+      <wsdl:input wsaw:Action="http://localhost/aics/IWcfSvcICS/GetShipmentByInput" message="tns:IWcfSvcICS_GetShipmentByInput_InputMessage" />
+      <wsdl:output wsaw:Action="http://localhost/aics/IWcfSvcICS/GetShipmentByInputResponse" message="tns:IWcfSvcICS_GetShipmentByInput_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllStock">
+      <wsdl:input wsaw:Action="http://localhost/aics/IWcfSvcICS/GetAllStock" message="tns:IWcfSvcICS_GetAllStock_InputMessage" />
+      <wsdl:output wsaw:Action="http://localhost/aics/IWcfSvcICS/GetAllStockResponse" message="tns:IWcfSvcICS_GetAllStock_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllShipment">
+      <wsdl:input wsaw:Action="http://localhost/aics/IWcfSvcICS/GetAllShipment" message="tns:IWcfSvcICS_GetAllShipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://localhost/aics/IWcfSvcICS/GetAllShipmentResponse" message="tns:IWcfSvcICS_GetAllShipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQtyByLocPart">
+      <wsdl:input wsaw:Action="http://localhost/aics/IWcfSvcICS/GetQtyByLocPart" message="tns:IWcfSvcICS_GetQtyByLocPart_InputMessage" />
+      <wsdl:output wsaw:Action="http://localhost/aics/IWcfSvcICS/GetQtyByLocPartResponse" message="tns:IWcfSvcICS_GetQtyByLocPart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StockIO">
+      <wsdl:input wsaw:Action="http://localhost/aics/IWcfSvcICS/StockIO" message="tns:IWcfSvcICS_StockIO_InputMessage" />
+      <wsdl:output wsaw:Action="http://localhost/aics/IWcfSvcICS/StockIOResponse" message="tns:IWcfSvcICS_StockIO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShipmentIO">
+      <wsdl:input wsaw:Action="http://localhost/aics/IWcfSvcICS/ShipmentIO" message="tns:IWcfSvcICS_ShipmentIO_InputMessage" />
+      <wsdl:output wsaw:Action="http://localhost/aics/IWcfSvcICS/ShipmentIOResponse" message="tns:IWcfSvcICS_ShipmentIO_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

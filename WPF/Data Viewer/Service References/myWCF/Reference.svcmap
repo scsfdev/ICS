@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="02a54078-0ebd-4bd5-9162-0df3603a07d4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/aics/WcfSvcICS.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WcfSvcICS.wsdl" MetadataType="Wsdl" ID="f08c9983-5255-43b0-af7c-5987fd97e351" SourceId="1" SourceUrl="http://localhost/AICS/WcfSvcICS.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="WcfSvcICS.xsd" MetadataType="Schema" ID="e8339caf-8846-45eb-8643-67fab3964493" SourceId="1" SourceUrl="http://localhost/AICS/WcfSvcICS.svc?xsd=xsd1" />
+    <MetadataFile FileName="WcfSvcICS1.xsd" MetadataType="Schema" ID="192b229b-d992-4f1c-a75e-bf5b8e80ca0c" SourceId="1" SourceUrl="http://localhost/AICS/WcfSvcICS.svc?xsd=xsd0" />
+    <MetadataFile FileName="WcfSvcICS2.xsd" MetadataType="Schema" ID="c892a489-66c5-4f29-9beb-71191200165e" SourceId="1" SourceUrl="http://localhost/AICS/WcfSvcICS.svc?xsd=xsd2" />
+    <MetadataFile FileName="WcfSvcICS.disco" MetadataType="Disco" ID="03d5afac-84e3-4c8d-90d4-78981c8d0036" SourceId="1" SourceUrl="http://localhost/AICS/WcfSvcICS.svc?disco" />
+    <MetadataFile FileName="WcfSvcICS1.wsdl" MetadataType="Wsdl" ID="1cddc91a-1d6d-46c8-bc56-48237c4e3433" SourceId="1" SourceUrl="http://localhost/AICS/WcfSvcICS.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

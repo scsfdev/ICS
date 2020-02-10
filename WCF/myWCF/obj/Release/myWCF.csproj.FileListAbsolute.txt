@@ -1,0 +1,6 @@
+C:\Tin_Projects\No_Team_Project\myWCF\myWCF\bin\myWCF.dll.config
+C:\Tin_Projects\No_Team_Project\myWCF\myWCF\bin\myWCF.dll
+C:\Tin_Projects\No_Team_Project\myWCF\myWCF\bin\myWCF.pdb
+C:\Tin_Projects\No_Team_Project\myWCF\myWCF\obj\Release\myWCF.dll
+C:\Tin_Projects\No_Team_Project\myWCF\myWCF\obj\Release\myWCF.pdb
+C:\Tin_Projects\No_Team_Project\myWCF\myWCF\obj\Release\myWCF.csprojResolveAssemblyReference.cache

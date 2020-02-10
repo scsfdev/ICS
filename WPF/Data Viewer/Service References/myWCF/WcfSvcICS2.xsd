@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/wcfsvc_android" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/wcfsvc_android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfProduct">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Product" nillable="true" type="tns:Product" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProduct" nillable="true" type="tns:ArrayOfProduct" />
+  <xs:complexType name="Product">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PartNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Qty" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Product" nillable="true" type="tns:Product" />
+  <xs:complexType name="MyReply">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsOk" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Msg" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyReply" nillable="true" type="tns:MyReply" />
+  <xs:complexType name="ArrayOfStock">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Stock" nillable="true" type="tns:Stock" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStock" nillable="true" type="tns:ArrayOfStock" />
+  <xs:complexType name="Stock">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InQty" type="xs:int" />
+      <xs:element minOccurs="0" name="LocID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MoveDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OutQty" type="xs:int" />
+      <xs:element minOccurs="0" name="PartNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Qty" type="xs:int" />
+      <xs:element minOccurs="0" name="RecID" type="xs:int" />
+      <xs:element minOccurs="0" name="RemainQty" type="xs:int" />
+      <xs:element minOccurs="0" name="StockIn" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Stock" nillable="true" type="tns:Stock" />
+  <xs:complexType name="ArrayOfShipment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Shipment" nillable="true" type="tns:Shipment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShipment" nillable="true" type="tns:ArrayOfShipment" />
+  <xs:complexType name="Shipment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CustomerNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PartNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Qty" type="xs:int" />
+      <xs:element minOccurs="0" name="RecID" type="xs:int" />
+      <xs:element minOccurs="0" name="ShipDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShipIn" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShipNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SupplierNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Shipment" nillable="true" type="tns:Shipment" />
+</xs:schema>
