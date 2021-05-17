@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Tin_Projects\AICS\AICS\Data Viewer\obj\Debug\
+E:\Tin_Projects\GitRepo\ICS\WPF\Data Viewer\obj\Debug\
 Data_Viewer
 none
 false
 CODE_ANALYSIS;DEBUG;TRACE
-E:\Tin_Projects\AICS\AICS\Data Viewer\App.xaml
+E:\Tin_Projects\GitRepo\ICS\WPF\Data Viewer\App.xaml
 2-1356017796
 
 18171069289
-711785409166
+711765721351
 MainWindow.xaml;Skins\MainSkin.xaml;
 
-True
+False
 

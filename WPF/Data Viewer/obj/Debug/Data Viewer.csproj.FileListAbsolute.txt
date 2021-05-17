@@ -32,3 +32,6 @@ C:\Tin_Projects\AICS\AICS\Data Viewer\obj\Debug\Data Viewer.pdb
 E:\Tin_Projects\AICS\AICS\Data Viewer\bin\Debug\Data Viewer.exe.config
 E:\Tin_Projects\AICS\AICS\Data Viewer\obj\Debug\Data Viewer.exe
 E:\Tin_Projects\AICS\AICS\Data Viewer\obj\Debug\Data Viewer.pdb
+E:\Tin_Projects\GitRepo\ICS\WPF\Data Viewer\bin\Debug\Data Viewer.exe.config
+E:\Tin_Projects\GitRepo\ICS\WPF\Data Viewer\obj\Debug\Data Viewer.exe
+E:\Tin_Projects\GitRepo\ICS\WPF\Data Viewer\obj\Debug\Data Viewer.pdb
